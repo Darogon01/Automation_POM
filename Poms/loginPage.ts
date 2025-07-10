@@ -2,8 +2,8 @@ import { Page, Locator } from "playwright/test";
 
 export class LoginPage {
 	readonly page: Page;
-	private readonly usernameTextbox: Locator;
-	private readonly passTextbox: Locator;
+	 readonly usernameTextbox: Locator;
+	 readonly passTextbox: Locator;
 	private readonly loginButton: Locator;
 
 	constructor(page: Page) {
