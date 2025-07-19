@@ -13,7 +13,6 @@ export class LoginPage {
         this.loginButton = page.getByRole("button", { name: "Login" });
     }
     async fillUsername() {
-        // this.usernameTextbox.waitFor({ state: "visible" });
         await this.usernameTextbox.fill("standard_user");
     }
 
@@ -25,3 +24,5 @@ export class LoginPage {
         await this.loginButton.click();
     }
 }
+
+
