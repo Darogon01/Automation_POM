@@ -10,7 +10,7 @@ test("Acce page to testing", async ({ page }) => {
 test("Login in to page", async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await page.goto("https://www.saucedemo.com/");
+    await page.goto(envData.BASE_URL);
     await loginPage.fillUsername();
     await loginPage.fillPass();
     await loginPage.clickLoginButton();
