@@ -17,7 +17,7 @@ export class LoginPage {
     }
 
     async fillPass() {
-        await this.passTextbox.fill("secret_Sauce");
+        await this.passTextbox.fill("secret_sauce");
     }
 
     async clickLoginButton() {

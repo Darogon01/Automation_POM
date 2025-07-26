@@ -14,4 +14,5 @@ test("Login in to page", async ({ page }) => {
     await loginPage.fillUsername();
     await loginPage.fillPass();
     await loginPage.clickLoginButton();
+    await expect(page).toHaveURL(/inventory/);
 });
